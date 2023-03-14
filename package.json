@@ -1,0 +1,62 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "private": true,
+  "author": "JingXichao",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:preview": "vue-cli-service build --preview",
+    "lint": "vue-cli-service lint",
+    "lint:style": "stylelint-config-prettier-check",
+    "clear": "rimraf node_modules&&npm install --registry=https://registry.npm.taobao.org"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "clipboard": "^2.0.11",
+    "core-js": "^3.15.2",
+    "dayjs": "^1.10.6",
+    "echarts": "^5.4.1",
+    "element-ui": "^2.15.3",
+    "js-cookie": "^3.0.0",
+    "jsencrypt": "3.2.1",
+    "lodash": "^4.17.21",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "qs": "^6.10.1",
+    "remixicon": "^2.5.0",
+    "screenfull": "^5.1.0",
+    "vue": "2.6.14",
+    "vue-i18n": "^8.26.7",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.1",
+    "chokidar": "^3.5.2",
+    "eslint": "^7.31.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.14.0",
+    "filemanager-webpack-plugin": "^6.1.4",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2",
+    "sass": "1.32.8",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.4.0",
+    "svg-sprite-loader": "^6.0.9",
+    "vue-template-compiler": "2.6.14",
+    "webpackbar": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">= 3.0.0"
+  }
+}
