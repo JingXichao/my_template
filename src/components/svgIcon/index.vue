@@ -1,6 +1,6 @@
 <template>
   <svg
-    :class="`svg-icon ${this.className}`"
+    :class="`svg-icon ${className}`"
     aria-hidden="true"
     :style="{ color: color, fill: color }"
   >
