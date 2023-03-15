@@ -1,6 +1,10 @@
 <template>
-  <svg :class="svgClass" aria-hidden="true">
-    <use :xlink:href="iconName" />
+  <svg
+    :class="`svg-icon ${this.className}`"
+    aria-hidden="true"
+    :style="{ color: color, fill: color }"
+  >
+    <use :xlink:href="`#icon-${iconClass}`" />
   </svg>
 </template>
 
@@ -10,14 +14,7 @@
     props: {
       iconClass: { type: String, required: true },
       className: { type: String, default: '' },
-    },
-    computed: {
-      iconName() {
-        return `#icon-${this.iconClass}`
-      },
-      svgClass() {
-        return this.className ? `svg-icon ${this.className}` : `svg-icon`
-      },
+      color: { type: String, default: '#2c3e50' },
     },
   }
 </script>

@@ -1,1 +1,2 @@
-公用的svg放这里
+svg放这里
+如果需要动态修改svg的颜色,请记得svg图片代码中的fill或者stroke属性为currentColor

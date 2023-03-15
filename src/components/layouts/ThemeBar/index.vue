@@ -183,24 +183,6 @@
     @include right-bar;
 
     top: calc((100vh - 110px) / 2);
-
-    ::v-deep {
-      svg:not(:root).svg-inline--fa {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        color: $base-color-white;
-      }
-
-      .svg-icon {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        font-size: 20px;
-        color: $base-color-white;
-        fill: $base-color-white;
-      }
-    }
   }
 
   .el-drawer__body {
