@@ -23,19 +23,19 @@
       </span>
       <el-dropdown-menu slot="dropdown" class="tabs-more">
         <el-dropdown-item command="closeOtherstabs">
-          <i class="el-icon-eleme" />
+          <RemixIcon icon-class="close-fill" color="" class-name="" />
           关闭其他
         </el-dropdown-item>
         <el-dropdown-item command="closeLefttabs">
-          <i class="el-icon-eleme" />
+          <RemixIcon icon-class="arrow-left-line" color="" class-name="" />
           关闭左侧
         </el-dropdown-item>
         <el-dropdown-item command="closeRighttabs">
-          <i class="el-icon-eleme" />
+          <RemixIcon icon-class="arrow-right-line" color="" class-name="" />
           关闭右侧
         </el-dropdown-item>
         <el-dropdown-item command="closeAlltabs">
-          <i class="el-icon-eleme" />
+          <RemixIcon icon-class="close-fill" color="" class-name="" />
           关闭全部
         </el-dropdown-item>
       </el-dropdown-menu>
