@@ -22,7 +22,7 @@
 <style lang="scss" scoped>
   .svg-icon {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     width: 15px;
     height: 15px;
     overflow: hidden;

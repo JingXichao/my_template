@@ -1,7 +1,7 @@
 <template>
   <i
     :class="`fs_default ri-${iconClass} ${className}`"
-    :style="{ color: color }"
+    :style="{ color: color, 'vertical-align': 'bottom' }"
   />
 </template>
 
