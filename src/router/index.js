@@ -14,24 +14,26 @@ Vue.use(VueRouter)
 export const constantRoutes = [
   {
     path: '/login',
-    component: () => import('@/views/login/index'),
+    component: () =>
+      import(/* webpackChunkName: "chunk-login" */ '@/views/login/index'),
     hidden: true,
   },
   {
     path: '/register',
-    component: () => import('@/views/register/index'),
+    component: () =>
+      import(/* webpackChunkName: "chunk-register" */ '@/views/register/index'),
     hidden: true,
   },
   {
     path: '/401',
     name: '401',
-    component: () => import('@/views/401'),
+    component: () => import(/* webpackChunkName: "chunk-401" */ '@/views/401'),
     hidden: true,
   },
   {
     path: '/404',
     name: '404',
-    component: () => import('@/views/404'),
+    component: () => import(/* webpackChunkName: "chunk-404" */ '@/views/404'),
     hidden: true,
   },
 ]
@@ -48,7 +50,8 @@ export const asyncRoutes = [
         path: 'home',
         name: 'Home',
         hidden: true,
-        component: () => import('@/views/home/index'),
+        component: () =>
+          import(/* webpackChunkName: "chunk-home" */ '@/views/home/index'),
         meta: {
           title: 'Home',
           breadcrumbHide: true,
@@ -59,7 +62,10 @@ export const asyncRoutes = [
       {
         path: 'dashboard',
         name: 'Dashboard',
-        component: () => import('@/views/dashboard/index'),
+        component: () =>
+          import(
+            /* webpackChunkName: "chunk-dashboard" */ '@/views/dashboard/index'
+          ),
         meta: {
           title: 'menu.dashboard',
           icon: 'dashboard-3-fill',
@@ -81,7 +87,10 @@ export const asyncRoutes = [
       {
         path: 'remixIcons',
         name: 'RemixIcon',
-        component: () => import('@/views/remixIcon/index'),
+        component: () =>
+          import(
+            /* webpackChunkName: "chunk-login" */ '@/views/remixIcon/index'
+          ),
         meta: {
           title: 'Remix Icons',
           icon: 'emotion-normal-fill',
