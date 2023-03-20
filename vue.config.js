@@ -48,6 +48,29 @@ module.exports = {
     },
     after: mockServer(),
   },
+  /////////////////
+  pwa: {
+    // 一些基础配置
+    name: 'vue-pwa',
+    themeColor: '#6476DB',
+    msTileColor: '#000000',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
+
+    /*
+     * 两个模式，GenerateSW（默认）和 InjectManifest
+     * GenerateSW: build项目时候，每次都会新建一个service worker文件
+     * InjectManifest: 自定义的service worker文件，并且可以处理预缓存列表
+     */
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      // 自定义的service worker文件的位置
+      swSrc: 'src/service-worker.js',
+      // ...other Workbox options...
+      importWorkboxFrom: 'disabled', // 是否要引入线上的service-worker文件，我们只需要自己定义的文件，不需要谷歌提供的sw文件
+    },
+  },
+  ///////////////////////////
   configureWebpack() {
     return {
       output: {
