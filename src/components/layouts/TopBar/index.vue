@@ -33,8 +33,8 @@
               class="fs_big mx_2 cursor el-icon-refresh-left"
               @click="refreshRoute"
             />
-            <avatar v-if="loginInterception" />
             <lang />
+            <avatar v-if="loginInterception" />
           </div>
         </el-col>
       </el-row>

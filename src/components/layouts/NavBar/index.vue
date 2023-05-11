@@ -20,8 +20,8 @@
             class="fs_big mx_2 cursor el-icon-refresh-left"
             @click="refreshRoute"
           />
-          <avatar v-if="loginInterception" />
           <lang title="切换语言" />
+          <avatar v-if="loginInterception" />
         </div>
       </el-col>
     </el-row>
