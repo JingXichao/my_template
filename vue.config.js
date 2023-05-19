@@ -21,6 +21,7 @@ const FileManagerPlugin = require('filemanager-webpack-plugin')
 const dayjs = require('dayjs')
 const date = dayjs().format('YYYY_M_D')
 const time = dayjs().format('YYYY-M-D HH:mm:ss')
+const fileTime = dayjs().format('YYYY-M-D_HHmmss')
 process.env.VUE_APP_TITLE = title
 process.env.VUE_APP_AUTHOR = author
 
@@ -49,6 +50,11 @@ module.exports = {
   },
   configureWebpack() {
     return {
+      output: {
+        // 输出重构  打包编译后的 文件名称  【模块名称.版本号.js】
+        filename: `${assetsDir}/js/[name].${fileTime}.js`,
+        chunkFilename: `${assetsDir}/js/[name].${fileTime}.js`,
+      },
       resolve: {
         alias: {
           '@': resolve('src'),
@@ -96,11 +102,6 @@ module.exports = {
             priority: 20,
             test: /[\\/]node_modules[\\/]_?element-ui(.*)/,
           },
-          fortawesome: {
-            name: 'chunk-fortawesome',
-            priority: 20,
-            test: /[\\/]node_modules[\\/]_?@fortawesome(.*)/,
-          },
         },
       })
       config
@@ -133,6 +134,10 @@ module.exports = {
   runtimeCompiler: true,
   productionSourceMap: false,
   css: {
+    extract: {
+      filename: `${assetsDir}/css/[name].${fileTime}.css`,
+      chunkFilename: `${assetsDir}/css/[name].${fileTime}.css`,
+    },
     requireModuleExtension: true,
     sourceMap: true,
     loaderOptions: {

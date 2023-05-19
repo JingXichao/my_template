@@ -1,6 +1,6 @@
 <template>
   <div class="remixIcon-container">
-    <h2 @click="handleClipboard($event)">Remix Icon</h2>
+    <h2>Remix Icon</h2>
     <el-select v-model="directories" placeholder="">
       <el-option
         v-for="item in directoriesOptions"

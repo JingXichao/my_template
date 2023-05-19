@@ -70,13 +70,6 @@ a {
 * {
   transition: $base-transition;
 }
-svg {
-  transition: none;
-  * {
-    transition: none;
-  }
-}
-
 html {
   body {
     position: relative;

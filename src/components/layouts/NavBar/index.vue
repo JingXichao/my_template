@@ -20,8 +20,8 @@
             class="fs_big mx_2 cursor el-icon-refresh-left"
             @click="refreshRoute"
           />
+          <lang class="mr_1" />
           <avatar v-if="loginInterception" />
-          <lang title="切换语言" />
         </div>
       </el-col>
     </el-row>
@@ -100,30 +100,6 @@
       align-items: center;
       justify-content: flex-end;
       height: $base-nav-bar-height;
-
-      ::v-deep {
-        svg {
-          margin-right: 15px;
-          font-size: $base-font-size-small;
-          color: $base-color-gray;
-          cursor: pointer;
-          fill: $base-color-gray;
-          vertical-align: bottom;
-        }
-
-        button {
-          svg {
-            margin-right: 0;
-            color: $base-color-white;
-            cursor: pointer;
-            fill: $base-color-white;
-          }
-        }
-
-        .el-badge {
-          margin-right: 15px;
-        }
-      }
     }
   }
 </style>

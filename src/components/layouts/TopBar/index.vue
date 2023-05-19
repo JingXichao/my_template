@@ -33,8 +33,8 @@
               class="fs_big mx_2 cursor el-icon-refresh-left"
               @click="refreshRoute"
             />
+            <lang class="mr_1" />
             <avatar v-if="loginInterception" />
-            <lang />
           </div>
         </el-col>
       </el-row>
@@ -134,11 +134,6 @@
             }
           }
 
-          svg {
-            width: 1rem;
-            margin-right: 3px;
-          }
-
           &--horizontal {
             .el-menu {
               .el-menu-item,
@@ -195,29 +190,6 @@
 
         .user-name + i {
           color: rgba($base-color-white, 0.9);
-        }
-
-        svg {
-          width: 1em;
-          height: 1em;
-          margin-right: 15px;
-          font-size: $base-font-size-big;
-          color: rgba($base-color-white, 0.9);
-          cursor: pointer;
-          fill: rgba($base-color-white, 0.9);
-        }
-
-        button {
-          svg {
-            margin-right: 0;
-            color: rgba($base-color-white, 0.9);
-            cursor: pointer;
-            fill: rgba($base-color-white, 0.9);
-          }
-        }
-
-        .el-badge {
-          margin-right: 15px;
         }
       }
     }
