@@ -1,5 +1,5 @@
 <template>
-  <div class="Home-container">
+  <div v-test class="Home-container">
     {{ $t('test') }}
   </div>
 </template>

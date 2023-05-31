@@ -1,6 +1,10 @@
-import Vue from 'vue'
-import svgIcon from '@/components/svgIcon'
-import remixIcon from '@/components/remixIcon'
+const files = require.context('./', true, /\.vue$/)
 
-Vue.component('SvgIcon', svgIcon)
-Vue.component('RemixIcon', remixIcon)
+export default {
+  install(Vue) {
+    files.keys().forEach((item) => {
+      const component = files(item)
+      Vue.component(component.default.name, component.default)
+    })
+  },
+}

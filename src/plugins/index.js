@@ -6,11 +6,11 @@ import './echarts'
 import '@/styles/index.scss'
 import '@/icons'
 import '@/permission'
-import '@/components'
-import '@/layouts/export'
 
+import Components from '@/components'
+import Directive from '@/directive'
 import Tools from '@/utils/tools'
-import Permissions from '@/utils/Permissions'
 
+Vue.use(Components)
+Vue.use(Directive)
 Vue.use(Tools)
-Vue.use(Permissions)
