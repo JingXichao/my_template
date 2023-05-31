@@ -45,7 +45,7 @@ const setting = {
   //vertical布局时默认展开的菜单path，使用逗号隔开建议只展开一个
   defaultOopeneds: ['/'],
   //需要加loading层的请求，防止重复提交
-  debounce: ['doEdit'],
+  debounce: [],
   //npm run build时是否自动生成7z压缩包
   build7z: false,
   //消息框消失时间
