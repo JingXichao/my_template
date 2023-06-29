@@ -35,6 +35,10 @@ npm run build
     icon: '';
     //如果设置为true，则不会被 <keep-alive> 缓存(默认 false)
     noKeepAlive: true,
+    //默认激活菜单
+    activeMenu:'',
+    //是否为外链
+    target:'_blank'
   }
 }
 ```
