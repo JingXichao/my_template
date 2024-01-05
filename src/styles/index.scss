@@ -70,10 +70,13 @@ a {
 * {
   transition: $base-transition;
 }
+:root {
+  --curHeight: 100vh;
+}
 html {
   body {
     position: relative;
-    height: 100vh;
+    height: $curHeight;
     padding: 0;
     margin: 0;
     font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -203,7 +203,7 @@
         left: 0;
         z-index: $base-z-index - 1;
         width: 100%;
-        height: 100vh;
+        height: $curHeight;
         overflow: hidden;
         background: #000;
         opacity: 0.5;

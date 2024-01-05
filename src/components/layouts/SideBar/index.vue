@@ -81,7 +81,7 @@
     left: 0;
     z-index: $base-z-index;
     width: $base-left-menu-width;
-    height: 100vh;
+    height: $curHeight;
     overflow: hidden;
     background: $base-menu-background;
     box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);

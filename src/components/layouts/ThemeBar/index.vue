@@ -15,7 +15,9 @@
       append-to-body
       size="470px"
     >
-      <el-scrollbar style="height: calc(100vh - 77px); overflow: hidden">
+      <el-scrollbar
+        style="height: calc((var(--curHeight) - 77px); overflow: hidden"
+      >
         <div class="el-drawer__body">
           <el-form ref="form" :model="theme" label-position="top">
             <el-form-item label="主题">
@@ -182,7 +184,7 @@
   .theme-bar-setting {
     @include right-bar;
 
-    top: calc((100vh - 110px) / 2);
+    top: calc((var(--curHeight) - 110px) / 2);
   }
 
   .el-drawer__body {

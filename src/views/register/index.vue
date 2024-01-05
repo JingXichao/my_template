@@ -187,7 +187,7 @@
 </script>
 <style lang="scss" scoped>
   .register-container {
-    height: 100vh;
+    height: $curHeight;
     background: url('~@/assets/login_images/background.jpg') center center fixed
       no-repeat;
     background-size: cover;
@@ -222,7 +222,7 @@
     .register-form {
       position: relative;
       max-width: 100%;
-      margin: calc((100vh - 499px) / 2) 10% 10%;
+      margin: calc(($curHeight - 499px) / 2) 10% 10%;
       overflow: hidden;
 
       .forget-password {

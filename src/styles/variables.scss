@@ -3,6 +3,7 @@
  */
 /* stylelint-disable */
 @charset "utf-8";
+$curHeight: var(--curHeight);
 //框架默认主题色
 $base-color-default: #ea5b0c;
 //默认层级
@@ -55,7 +56,7 @@ $base-tag-item-height: 34px;
 $base-menu-item-height: 50px;
 //app-main的高度
 $base-app-main-height: calc(
-  100vh - #{$base-nav-bar-height} - #{$base-tabs-bar-height} - #{$base-padding} -
+  #{$curHeight} - #{$base-nav-bar-height} - #{$base-tabs-bar-height} - #{$base-padding} -
     #{$base-padding} - 55px
 );
 //纵向布局时左侧导航未折叠时的宽度
