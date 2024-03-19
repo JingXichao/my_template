@@ -116,14 +116,16 @@ module.exports = {
           .plugin('fileManager')
           .use(FileManagerPlugin, [
             {
-              onEnd: {
-                delete: [`./${outputDir}/video`, `./${outputDir}/data`],
-                archive: [
-                  {
-                    source: `./${outputDir}`,
-                    destination: `./${outputDir}/${abbreviation}_${outputDir}_${date}.7z`,
-                  },
-                ],
+              events: {
+                onEnd: {
+                  delete: [`./${outputDir}/video`, `./${outputDir}/data`],
+                  archive: [
+                    {
+                      source: `./${outputDir}`,
+                      destination: `./${outputDir}/${abbreviation}_${outputDir}_${date}.7z`,
+                    },
+                  ],
+                },
               },
             },
           ])
