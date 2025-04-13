@@ -43,5 +43,6 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.vueIndentScriptAndStyle": true,
-  "vetur.format.defaultFormatter.html": "prettier"
+  "vetur.format.defaultFormatter.html": "prettier",
+  "i18n-ally.localesPaths": ["src/language", "src/language/langs"]
 }
